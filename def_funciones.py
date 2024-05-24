@@ -1,4 +1,12 @@
 def validar_entero(numero:str)->int:
+    """recibe un str si es valido lo trasnforma en int
+
+    Args:
+        numero (str): str a validar 
+
+    Returns:
+        int: entero validado
+    """
     while True:
         entrada = input(numero)
         try:
@@ -8,6 +16,18 @@ def validar_entero(numero:str)->int:
             print("Error, se esperaba un entero")
 
 def v_entero(a:int, b:int)->int:
+    """Valida que sea entero
+
+    Args:
+        a (int): primer operador a validar 
+        b (int): segundo operador a validar 
+
+    Raises:
+        TypeError: si los operadores no son enteros 
+
+    Returns:
+        int: operadores validados
+    """
     if not isinstance(a, int) or not isinstance(b, int):
         raise TypeError("Se esperaban enteros")
 
