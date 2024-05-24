@@ -27,8 +27,8 @@ while True:
             print(f"El Factorial de {a} es: {factorial(a)} y el factorial de {b} es: {factorial(b)}")
     
         case "6":
-            opcion = input("Confirmas que quiere salir? elija 'si' o 'no': ")
-            resultado = confirmar_salir(opcion)
+            opcion = input("Confirmas que quiere salir? elija 'si' o 'no': ").lower()
+            resultado = confirmar_salida(opcion)
             if resultado:
                 break
     
